@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Angular Crimson Slash Background -->
+  <polygon points="14,8 112,18 98,112 6,96" fill="#080808" stroke="#E60023" stroke-width="3" />
+  <polygon points="92,8 116,8 28,112 4,112" fill="#E60023" opacity="0.9" />
+  <!-- Sharp Geometric L -->
+  <path d="M24 22 L44 22 L36 78 L66 78 L62 96 L14 96 Z" fill="#FFFFFF" />
+  <!-- Sharp Interlocking V -->
+  <path d="M56 22 L76 22 L82 68 L98 22 L114 22 L86 96 L68 96 Z" fill="#FFFFFF" />
+  <!-- Razor Accent Cut -->
+  <polygon points="20,58 104,44 102,50 18,64" fill="#E60023" />
+</svg>

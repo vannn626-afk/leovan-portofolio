@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary-black: #080808;
+    --color-deep-black: #030303;
+    --color-signature-red: #E60023;
+    --color-dark-red: #990019;
+    --color-pure-white: #FFFFFF;
+    --color-secondary-gray: #A0A0A0;
+  }
+
+  html {
+    background-color: #080808;
+    color: #FFFFFF;
+    scroll-behavior: smooth;
+    font-family: var(--font-body), sans-serif;
+  }
+
+  body {
+    background-color: #080808;
+    color: #FFFFFF;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-body), sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
+}
+
+/* Comic Halftone Dot Overlay */
+.halftone-overlay {
+  background-image: radial-gradient(rgba(230, 0, 35, 0.28) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+/* Angular Clip Path for Buttons */
+.angular-clip-btn {
+  clip-path: polygon(0 0, 95% 0, 100% 22%, 100% 100%, 5% 100%, 0 78%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
