@@ -90,18 +90,18 @@ export function CinematicNavbar() {
             })}
           </nav>
 
-          {/* Zone 3: Intro Replay, Sound Control & Mobile Menu Trigger */}
-          <div className="flex items-center gap-2.5 shrink-0">
+          {/* Zone 3: Greeting Replay, Sound Control & Mobile Menu Trigger */}
+          <div className="flex items-center gap-2 shrink-0">
             <button
               type="button"
               onClick={() => {
                 playSound('slash');
                 window.dispatchEvent(new CustomEvent('leovan:replay-intro'));
               }}
-              aria-label="Replay Cinematic Intro"
-              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 font-mono text-xs uppercase tracking-wider bg-[#030303] text-white border border-white/25 hover:border-[#E60023] hover:bg-[#E60023] transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+              aria-label="Replay Character Greeting"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wider bg-[#080808] text-white border border-[#E60023] hover:bg-[#E60023] transition-colors whitespace-nowrap shrink-0 cursor-pointer"
             >
-              <span>INTRO</span>
+              <span>SALAM // GREETING</span>
             </button>
 
             <button

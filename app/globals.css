@@ -2,6 +2,9 @@
 
 @layer base {
   :root {
+    --font-display: 'Syne', 'Clash Display', 'Space Grotesk', system-ui, -apple-system, sans-serif;
+    --font-body: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'IBM Plex Mono', 'JetBrains Mono', 'Fira Code', Menlo, monospace;
     --color-primary-black: #080808;
     --color-deep-black: #030303;
     --color-signature-red: #E60023;

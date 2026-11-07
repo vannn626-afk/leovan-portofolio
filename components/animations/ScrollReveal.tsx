@@ -48,7 +48,7 @@ export function SlashWipeReveal({
         rotateX: 0,
         scale: 1,
       }}
-      viewport={{ once: false, amount: 0.08 }}
+      viewport={{ once: true, amount: 0.08 }}
       transition={{
         duration: 0.62,
         delay,
@@ -61,7 +61,7 @@ export function SlashWipeReveal({
           aria-hidden="true"
           initial={{ x: direction === 'right' ? '105%' : '-105%', skewX: -18 }}
           whileInView={{ x: direction === 'right' ? '-115%' : '115%', skewX: -18 }}
-          viewport={{ once: false, amount: 0.08 }}
+          viewport={{ once: true, amount: 0.08 }}
           transition={{
             duration: 0.68,
             delay: delay + 0.04,
@@ -107,7 +107,7 @@ export function SkewHeadlineReveal({
         rotateZ: 0,
         scale: 1,
       }}
-      viewport={{ once: false, amount: 0.1 }}
+      viewport={{ once: true, amount: 0.1 }}
       transition={{
         duration: 0.62,
         delay,
@@ -120,7 +120,7 @@ export function SkewHeadlineReveal({
         aria-hidden="true"
         initial={{ scaleX: 0, originX: 0 }}
         whileInView={{ scaleX: 1, originX: 0 }}
-        viewport={{ once: false, amount: 0.1 }}
+        viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 0.55, delay: delay + 0.16, ease: [0.16, 1, 0.3, 1] }}
         className="mt-3 h-1 w-28 bg-[#E60023] -skew-x-12"
       />
@@ -167,7 +167,7 @@ export function PerspectiveCardReveal({
           rotateY: 0,
           skewX: 0,
         }}
-        viewport={{ once: false, amount: 0.08 }}
+        viewport={{ once: true, amount: 0.08 }}
         transition={{
           duration: 0.66,
           delay,
@@ -198,7 +198,7 @@ export function StaggeredGridReveal({
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.08 }}
+      viewport={{ once: true, amount: 0.08 }}
       variants={{
         hidden: {},
         visible: {

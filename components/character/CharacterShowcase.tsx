@@ -115,7 +115,7 @@ export function CharacterShowcase({
       }}
       animate={isHero ? targetOuterState : undefined}
       whileInView={!isHero ? targetOuterState : undefined}
-      viewport={{ once: false, amount: 0.08 }}
+      viewport={{ once: true, amount: 0.08 }}
       transition={{
         duration: 0.72,
         ease: [0.16, 1, 0.3, 1],
@@ -137,7 +137,7 @@ export function CharacterShowcase({
           initial={{ scale: 0.65, rotate: -12, x: 40 }}
           animate={isHero ? { scale: 1, rotate: 0, x: 0 } : undefined}
           whileInView={!isHero ? { scale: 1, rotate: 0, x: 0 } : undefined}
-          viewport={{ once: false, amount: 0.08 }}
+          viewport={{ once: true, amount: 0.08 }}
           transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
           className="w-full h-full bg-[#080808]/90 border-2 border-[#E60023]"
           style={{
@@ -150,7 +150,7 @@ export function CharacterShowcase({
               initial={{ x: '-100%', skewX: -20 }}
               animate={isHero ? { x: '0%', skewX: 0 } : undefined}
               whileInView={!isHero ? { x: '0%', skewX: 0 } : undefined}
-              viewport={{ once: false, amount: 0.08 }}
+              viewport={{ once: true, amount: 0.08 }}
               transition={{ duration: 0.75, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="absolute -inset-8 bg-[#E60023]/85"
               style={{
@@ -175,7 +175,7 @@ export function CharacterShowcase({
           initial={{ scale: 1.18, rotate: 8, opacity: 0 }}
           animate={isHero ? { scale: 1, rotate: 0, opacity: 1 } : undefined}
           whileInView={!isHero ? { scale: 1, rotate: 0, opacity: 1 } : undefined}
-          viewport={{ once: false, amount: 0.08 }}
+          viewport={{ once: true, amount: 0.08 }}
           transition={{ duration: 0.65, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
           className="w-full h-full border border-white/25"
           style={{
@@ -202,7 +202,7 @@ export function CharacterShowcase({
           initial={{ y: 48, scale: 0.78, rotateZ: -5 }}
           animate={isHero ? { y: 0, scale: 1, rotateZ: 0 } : undefined}
           whileInView={!isHero ? { y: 0, scale: 1, rotateZ: 0 } : undefined}
-          viewport={{ once: false, amount: 0.08 }}
+          viewport={{ once: true, amount: 0.08 }}
           transition={{ duration: 0.68, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
           src={imgSrc}
           alt="LEOVAN Main Portfolio Character"
@@ -211,10 +211,10 @@ export function CharacterShowcase({
           onError={() => {
             if (
               imgSrc !==
-              '/assets/aistudio/new_hero_hirara_mlbb_render_png_by_wolvesdzn_dlm9sk9_c7a67f9c.png'
+              '/assets/aistudio/Picsart_26-11-07_12-37-25-519_7283776c.png'
             ) {
               setImgSrc(
-                '/assets/aistudio/new_hero_hirara_mlbb_render_png_by_wolvesdzn_dlm9sk9_c7a67f9c.png'
+                '/assets/aistudio/Picsart_26-11-07_12-37-25-519_7283776c.png'
               );
             }
           }}
@@ -236,7 +236,7 @@ export function CharacterShowcase({
           initial={{ x: -24, y: -24, scale: 0.6 }}
           animate={isHero ? { x: 0, y: 0, scale: 1 } : undefined}
           whileInView={!isHero ? { x: 0, y: 0, scale: 1 } : undefined}
-          viewport={{ once: false, amount: 0.08 }}
+          viewport={{ once: true, amount: 0.08 }}
           transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           viewBox="0 0 80 80"
           className="absolute top-2 left-2 w-12 h-12 text-[#E60023]"
@@ -251,7 +251,7 @@ export function CharacterShowcase({
           initial={{ x: 36, skewX: -16, scale: 0.85 }}
           animate={isHero ? { x: 0, skewX: 0, scale: 1 } : undefined}
           whileInView={!isHero ? { x: 0, skewX: 0, scale: 1 } : undefined}
-          viewport={{ once: false, amount: 0.08 }}
+          viewport={{ once: true, amount: 0.08 }}
           transition={{ duration: 0.55, delay: 0.24, ease: [0.16, 1, 0.3, 1] }}
           className="absolute bottom-2 right-2 bg-[#080808] border border-[#E60023] px-3.5 py-1.5 shadow-[4px_4px_0px_#E60023]"
           style={{ clipPath: 'polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%)' }}

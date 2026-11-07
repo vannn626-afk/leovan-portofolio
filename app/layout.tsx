@@ -1,28 +1,6 @@
 import type { Metadata } from 'next';
-import { Syne, DM_Sans, IBM_Plex_Mono } from 'next/font/google';
 import './globals.css';
 import { PortfolioShell } from '../components/navigation/PortfolioShell';
-
-const displayFont = Syne({
-  subsets: ['latin'],
-  weight: ['700', '800'],
-  variable: '--font-display',
-  display: 'swap',
-});
-
-const bodyFont = DM_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  variable: '--font-body',
-  display: 'swap',
-});
-
-const monoFont = IBM_Plex_Mono({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--font-mono',
-  display: 'swap',
-});
 
 const siteUrl = process.env.APP_URL || 'https://leovan.my.id';
 
@@ -91,10 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html
-      lang="id"
-      className={`${displayFont.variable} ${bodyFont.variable} ${monoFont.variable} dark`}
-    >
+    <html lang="id" className="dark">
       <head>
         <script
           type="application/ld+json"

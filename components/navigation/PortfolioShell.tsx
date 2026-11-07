@@ -1,24 +1,23 @@
 'use client';
 
 import React from 'react';
-import dynamic from 'next/dynamic';
 import { SoundProvider } from '../ui/SoundProvider';
-import { CinematicIntro } from '../animations/CinematicIntro';
+import { CinematicBackground } from '../ui/CinematicBackground';
+import { CharacterGreetingIntro } from '../animations/CharacterGreetingIntro';
 import { CinematicNavbar } from './CinematicNavbar';
 import { CinematicFooter } from './CinematicFooter';
 import { PageSlashTransition } from '../animations/PageSlashTransition';
-
-const GlobalThreeScene = dynamic(
-  () => import('../three/GlobalThreeScene').then((mod) => mod.GlobalThreeScene),
-  { ssr: false }
-);
 
 export function PortfolioShell({ children }: { children: React.ReactNode }) {
   return (
     <SoundProvider>
       <div className="relative min-h-screen bg-[#080808] text-white selection:bg-[#E60023] selection:text-white overflow-x-hidden">
-        <GlobalThreeScene />
-        <CinematicIntro />
+        {/* Lightweight 60fps GPU-accelerated Persona background (no lag) */}
+        <CinematicBackground />
+
+        {/* Animated Character Greeting on Web Open */}
+        <CharacterGreetingIntro />
+
         <CinematicNavbar />
         <PageSlashTransition>
           <main id="main-content" className="relative z-10 flex-1">
